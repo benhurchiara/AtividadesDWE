@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--COMENTARIOS-->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Equipamentos de Informática</title>
+
+    </head>
+    <body>
+        <div class="header">    
+        <h1>Equipamentos de Informática</h1>
+        <ul>
+            <li><a href="../Index.html">Home</a></li>
+            <li><a href="Index_Pedido.html">Fazer Pedido</a></li>
+        </ul>
+    </div> 
+
+    <div class="main">
+     <a href="Index.html"><img src="../Imagens/Equipamentos.png" alt="Equipamentos de Informática" width="900"/></a>
+
+        <h2>Fazer Pedido</h2>
+        <form method="Get">
+        Nome: <input type="text" name="Nome" size="40" maxlength="40" placeholder="Escreva eu Nome Completo Aqui" autofocus />
+        RG: <input type="text" name="RG" size="12" maxlength="12" placeholder="xx xxx xxx - x" />
+        E-mail: <input type="email" name="E-mail" size="30" maxlength="30" placeholder="SeuEmailAqui@hospedagem" />
+        <br /><br />
+        Equipamentos: <select name="Modelo">
+            <option></option>
+            <option value="Computador">Computador</option>
+            <option value="Notebook">Notebook</option>
+            <option value="Tablet">Tablet</option>
+        </select>
+        Quantidade: <input type="number" name="Quantidade" min="1" max="10" value=" " />
+        <input type="checkbox" name="Garantia Estendida?" />Garantia Estendida?
+        <br /><br />
+        Cor: <input type="radio" name="cor" value="branco" />Branco
+        <input type="radio" name="cor" value="Preto" />Preto
+        <input type="radio" name="cor" value="Prata" />Prata
+        <br /><br />
+        Endereço: <br />
+        <textarea name="Endereço" rows="3" cols="70" placeholder="Informe seu Endereço"></textarea>
+        <br /><br />
+        <input type="submit" value="Enviar Pedido"/>
+        <input type="submit" value="Limpar"/>
+    </form>
+</div>
+
+    
+    </body>
+    </html>

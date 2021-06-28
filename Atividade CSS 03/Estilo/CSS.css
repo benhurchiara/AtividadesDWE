@@ -1,0 +1,193 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: darkorange;
+}
+header {
+    top: 0;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 139);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+li {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+h1 {
+    width: 75%;
+    font-size: 1.75rem;
+}
+main {
+    position: absolute;
+    top: 100px;
+    background: radial-gradient(circle, rgb(255, 160, 122), rgb(176, 196, 222));
+}
+h2 {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 3px 3px rgb(0, 0, 139);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.fotos {
+    border-radius: 50%;
+    width: 30%;
+    padding: 10px;
+}
+#loj, #bus, #con {
+    padding-top: 120px;
+}
+.item_loja {
+    background-color: aliceblue;
+    color: royalblue;
+    width: 80%;
+    margin: 15px;
+    border-radius: 4%;
+}
+.item_loja {
+    border-radius: 4%;
+}
+h3 {
+    text-transform: uppercase;
+    color: darkslateblue;
+}
+h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: darkorange;
+}
+p {
+    font-weight: bold;
+}
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 30px auto;
+}
+label, #qtd, #dest, .botao {
+    font-size: 1.25rem;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+}
+#qtd, #dest, .botao {
+    font-size: inherit;
+    text-align: center;
+    border: none;
+    margin-bottom: 20px;
+}
+label, .botao {
+    background-color: darkblue;
+    color: aliceblue;
+}
+#nome, #email, #fone {
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 12px 12px 40px;
+    margin-bottom: 20px;
+}
+#nome {
+    background-image: url("../Imagens/user_peq.png");
+}
+#email {
+    background-image: url("../Imagens/correio_peq.png");
+}
+#fone {
+    background-image: url("../Imagens/phone_peq.png");
+}
+form p {
+    font-weight: normal;
+}
+img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 50px;
+    }
+    ul {
+        width: 48%;
+    }
+    li {
+        width: 25%;
+    }
+    h1 {
+        width: 52%;
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    a {
+        font-size: 1.25rem;
+    }
+    main {
+        top: 50px;
+    }
+    .fotos {
+        width: 16%;
+        padding: 30px;
+        transition: border-radius 2s;
+    }
+    .fotos:hover {
+        border-radius: 20%;
+    }
+    .item_loja {
+        width: 25%;
+    }
+    form {
+        width: 50%;
+        margin-bottom: 160px;
+    }
+    label {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    #qtd, #dest, .botao {
+        width: 50%;
+    }
+    #nome, #email, #fone {
+        font-size: 1,25rem;
+        padding: 12px 20px 12px 50px;
+    }
+    .botao:hover {
+        background-color: rgb(255, 140, 0);
+    }
+}

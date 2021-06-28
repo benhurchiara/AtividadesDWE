@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&display=swap');
+
+:root@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+ {
+--cor-fonte-principal: darkslategray;
+--cor-fonte-secundaria: midnightblue;
+--cor-fundo-principal: cadetblue;
+--cor-fundo-secundaria: whitesmoke;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-fundo-principal);
+}
+img {
+    width: 100%;
+}
+header {
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-secundaria);
+    z-index: 1;
+}
+
+main {
+    top: 10vh;
+    position: absolute;
+    width: 100%;
+}
+.container {
+    height: 70vh;
+    margin: 2rem;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-fundo-secundaria);
+}
+.superior {
+    grid-template-columns: 1fr;
+}
+input, select {
+    color: inherit;
+    font-family: inherit;
+    margin: 8px 5px;
+}
+.opc_fundo_azul {
+    background-color: rgb(15, 228, 61);
+}
+.opc_fundo_cinza {
+    background-color: rgb(8, 0, 0);
+}
+.opc_fundo_verde {
+    background-color: rgb(247, 10, 195);
+}
+.opc_fonte_marrom {
+    color: sienna;
+}
+.opc_fonte_vermelho {
+    color: crimson;
+}
+.opc_fonte_violeta {
+    color: #96f;
+}
+.opc_linha_meio {
+    text-decoration: line-through;
+}
+.opc_borda {
+    border: 3px solid gold;
+}
+.imagemdefundo {
+    background-image: url('../imagens/background.svg');
+}
+.opacidadetransparencia {
+    opacity: 0.5;
+}
+#imagemjava {
+    width: 25%;
+    margin: auto;
+}
+.Audiowide{
+    font-family:'Audiowide', cursive ;
+}
+.Monoton {
+    font-family: 'Monoton', cursive ;
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+    .container {
+        height: 30vh;
+    }
+    .superior {
+        grid-template-columns: repeat(5, 1fr);        
+    }
+    .inferior {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

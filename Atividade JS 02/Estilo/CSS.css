@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+:root
+ {
+--cor-fonte-principal: darkslategray;
+--cor-fonte-secundaria: dimgray;
+--cor-fundo-principal: gainsboro;
+--cor-fundo-secundaria: aliceblue;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-fundo-principal);
+}
+img {
+    width: 40%;
+}
+header {
+    top: 0;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-secundaria);
+    z-index: 1;
+}
+
+main {
+    top: 4rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    max-height: 200%;
+    width: 100%;
+    margin: 1rem auto;
+    display: grid;
+    gap: 0.25;
+    padding: 1rem;
+    align-items: center;
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-fundo-secundaria);
+}
+.superior, .inferior {
+    grid-template-columns: 1fr;
+}
+input, select, option {
+    color: inherit;
+    font-family: inherit;
+    font-weight:inherit;
+    text-align:inherit;
+}
+.figuras {
+    width: 15%;
+    cursor: pointer;
+}
+#div_adiciona_figura {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+.novo_input {
+    width: 60%;
+    margin-top: 0.5rem;
+}
+table {
+    margin: auto;
+    font-size: 0.75rem;
+    width: 90%;
+}
+td {
+    border: 1px dashed var(--cor-fonte-principal);
+}
+caption {
+    color: var(--cor-fonte-principal);
+}
+#tab_principal td, .lista_principal {
+    cursor: pointer;
+}
+ul {
+    list-style-position: inside;
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+
+@media (min-width: 768px) { 
+    img {
+     width: 50%;
+    }
+    header {
+        font-size: 2rem;
+    }
+    main {
+        height: calc(100% - 4rem);
+    }
+    .container {
+        height: 38%;
+        width: 90%;
+        margin: 2rem auto
+    }
+    .superior {
+        grid-template-columns: repeat(6, 1fr);        
+    }
+    .inferior {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
